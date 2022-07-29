@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body{
+  background-color: #D5CFE1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec-title{
+  height: 768px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.sec-about{
+  height: 768px;
+  background-color: #aa9fb1;
+}
+
+.sec-skills{
+  height: 768px;
+  background-color: #A09ABC;
+}
+
+
+.sec-contact{
+  height: 768px;
+  background-color: #D4BEBE;
+}
+
+.sec-projects{
+  height: 100%;
+  background-color: #E1DEE9;
+}
+
+.projects-title{
+  transform: rotate(270deg) scale(5);
+}
+
+.contact-title{
+  transform: rotate(90deg) scale(5);
+}
+
+
+
+/* responsive */
+
+@media (max-width:767px){
+
+  .navigation nav{
+    display: flex;
+    justify-content: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .sec-projects{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  main .sec-title, .sec-about, .sec-skills, .sec-contact{
+    height: 100%;
   }
+
+  .sec-title{
+    width: auto;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sec-about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .sec-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sec-projects article{
+    width: 90%;
+    overflow-x: scroll;
+  }
+
+  .sec-projects h5{
+    transform: none;
+    width: auto;
+    font-size: 30px;
+  }
+
+  .sec-contact .contact-title{
+    transform: none;
+  }
+
+  .sec-about h5{
+    font-size: 30px;
+  }
+
+  .sec-contact h5{
+    font-size: 30px;
+  }
+
+  .sec-skills h5{
+    font-size: 30px;
+  }
+
+
 }
